@@ -10,18 +10,17 @@
     <body>
         <div class="py-3 container">
             <div class="row">
-                <h1 class="display-4">Test heading</h1>
+                
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card-group">
                         <div class="card">
                             <div class="card-body">
-                                <h1>title</h1>
-
+                                <h1>Caesar cipher</h1>
                                 <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Example select</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <label for="key-select">Key</label>
+                                    <select class="form-control" id="key-select">
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -51,6 +50,13 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
+                                    <label for="method-select">Text encode/decode</label>
+                                    <select class="form-control" id="method-select">
+                                        <option>Cipher</option>
+                                        <option>Decipher</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
                                     <label for="input-text">Text input</label>
                                     <textarea pattern="^[a-zA-Z]" class="form-control" id="input-text" rows="3"></textarea>
                                 </div>
@@ -61,13 +67,6 @@
                                     <textarea class="form-control" id="output-text" rows="3"></textarea>
                                 </div>
 
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h1>Encode</h1>
-                                <form>
-                                </form>
                             </div>
                         </div>
                     </div>

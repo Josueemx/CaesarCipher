@@ -1,14 +1,18 @@
 window.onload = function() {
-    //incomplete implementation: https://stackoverflow.com/questions/16647404/javascript-function-to-enter-only-alphabets-on-keypress
+    //code implementation from: https://stackoverflow.com/questions/16647404/javascript-function-to-enter-only-alphabets-on-keypress
     function alphaOnly(event) {
         var textInput = document.getElementById("input-text").value;
-        textInput = textInput.replace(/[^A-Za-z]/g, "");
-        document.getElementById("input-text ").value = textInput;
+        textInput = textInput.replace(/[^A-Za-z ]/g, "");
+        document.getElementById("input-text").value = textInput;
     };
 
     function main() {
         var input = $("#input-text").val().toUpperCase();
-        var key = 13;
+        var key = parseInt($("#key-select").val());
+        
+        if ($("#method-select").val() === "Cipher") {
+            key = 26 - key;
+        }
         
         var output = [];
         
